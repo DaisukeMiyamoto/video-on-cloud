@@ -14,7 +14,6 @@
         <header class="mdl-layout__header mdl-layout__header--waterfall">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <!--<span class="android-title mdl-layout-title"><img class="android-logo-image" src="images/android-logo.png"></span>-->
                 <span class="mdl-layout-title">VideoOnCloud</span>
 
                 <div class="mdl-layout-spacer"></div>
@@ -41,7 +40,7 @@
 
                 <div class="voc-watch-card mdl-card mdl-shadow--2dp">
                     <div class="mdl-card__title mdl-card--expand">
-                        <video class="video" controls></video>
+                        <video class="video" id="video-player" controls></video>
                     </div>
                     <div class="mdl-card__supporting-text mdl-card--border">
                         FamilyGuy Season15 Episode01
@@ -65,17 +64,17 @@
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
-        var video = document.getElementById('video');
+        var video = document.getElementById('video-player');
         if (Hls.isSupported()) {
             var hls = new Hls();
-            hls.loadSource('/hls/familyguy_s15e06/hls_familyguy_s15e01.m3u8');
+            hls.loadSource('/hls/familyguy_s15e01/hls_familyguy_s15e01.m3u8');
             hls.attachMedia(video);
             hls.on(Hls.Events.MANIFEST_PARSED, function() {
                 video.play();
             });
         }
         else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = '/hls/familyguy_s15e06/hls_familyguy_s15e01.m3u8';
+            video.src = '/hls/familyguy_s15e01/hls_familyguy_s15e01.m3u8';
             video.addEventListener('loadedmetadata', function() {
                 video.play();
             });
