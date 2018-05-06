@@ -1,0 +1,44 @@
+.voc-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+}
+
+.voc-navigation .mdl-navigation__link:hover {
+    border-bottom: 4px solid #ddd;
+}
+
+.mygrid {
+    max-width: 2000px;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+
+.mdl-cell {
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-top: 4px;
+    color: white;
+}
+
+.mdl-grid:first-of-type .mdl-cell {
+    height: 350px;
+}
+
+.voc-card.mdl-card {
+  /*width: 420px;*/
+  /*height: 420px;*/
+}
+
+.voc-card > .mdl-card__title {
+    width: 400px;
+    height: 226px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000;
+    background: #000;
+}
