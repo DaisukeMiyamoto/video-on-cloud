@@ -60,3 +60,10 @@
     width: 100%;
     margin: auto;
 }
+
+.mdl-layout__drawer .mdl-layout-title {
+    position: relative;
+    background: #444;
+    color: #fff;
+    height: 160px;
+}
