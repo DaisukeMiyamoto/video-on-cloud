@@ -52,9 +52,8 @@
 .mdl-cell {
     box-sizing: border-box;
     /*height: 400px;*/
-    width: 400px;
-    padding-left: 8px;
-    padding-top: 4px;
+    width: 350px;
+    padding: auto;
     color: white;
 }
 
@@ -63,12 +62,12 @@
 }
 
 .voc-card.mdl-card {
-  /*width: 420px;*/
-  /*height: 420px;*/
+  width: 100%;
+  margin: auto;
 }
 
 .voc-card > .mdl-card__title {
-    width: 400px;
+    /*width: 400px;*/
     height: 226px;
     color: #fff;
     text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000;
