@@ -1,3 +1,17 @@
+/* Navigation Drawer */
+.mdl-layout__drawer .mdl-layout-title {
+    position: relative;
+    background: #444;
+    color: #fff;
+    height: 160px;
+}
+
+.mdl-layout__drawer .mdl-layout-title .voc-title-logo {
+    position: absolute;
+    bottom: 4px;
+}
+
+/* Navigation Menu */
 .voc-navigation .mdl-navigation__link {
     display: inline-block;
     height: 60px;
@@ -10,6 +24,21 @@
     border-bottom: 4px solid #ddd;
 }
 
+.search-box.is-focused {
+    width: calc(100% - 48px);
+}
+
+.search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+}
+
+#search-field {
+    border-radius: 5px !important;
+    background: #fff !important;
+    color: #000;
+}
+
+/* Grid Cards */
 .mygrid {
     max-width: 2000px;
     padding: 0;
@@ -22,7 +51,6 @@
 
 .mdl-cell {
     box-sizing: border-box;
-    /*background-color: #BDBDBD;*/
     /*height: 400px;*/
     width: 400px;
     padding-left: 8px;
@@ -47,6 +75,7 @@
     background: #000;
 }
 
+/* Video Player */
 .voc-watch-card.mdl-card{
     margin: 20px auto;
     width: 80%;
@@ -61,9 +90,3 @@
     margin: auto;
 }
 
-.mdl-layout__drawer .mdl-layout-title {
-    position: relative;
-    background: #444;
-    color: #fff;
-    height: 160px;
-}

@@ -15,21 +15,30 @@
             <div class="mdl-layout__header-row">
                 <!-- Title -->
                 <span class="mdl-layout-title">VideoOnCloud</span>
-
                 <div class="mdl-layout-spacer"></div>
-
                 <!-- Navigation -->
                 <div class="voc-navigation-container">
                     <nav class="voc-navigation mdl-navigation mdl-layout--large-screen-only">
                         <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play List</a>
+                        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Settings</a>
+                        <div class="search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+                            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+                                <i class="material-icons">search</i>
+                            </label>
+                            <div class="mdl-textfield__expandable-holder">
+                                <input class="mdl-textfield__input" type="text" id="search-field">
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">VideoOnCloud</span>
+            <span class="mdl-layout-title"><span class="voc-title-logo">VideoOnCloud</span></span>
             <nav class="mdl-navigation">
                 <a class="mdl-navigation__link" href="">FamilyGuy</a>
+                <div class="android-drawer-separator"></div>
+                <a class="mdl-navigation__link" href="">Play List</a>
                 <div class="android-drawer-separator"></div>
                 <a class="mdl-navigation__link" href="">Settings</a>
             </nav>
